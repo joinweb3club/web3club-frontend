@@ -1,0 +1,125 @@
+
+/* 首页应用LOGO样式 - 圆形、符合UI色彩的星光效果 */
+.app-logo-icon[data-v-4f9ceb7d] {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #03FAA0 0%, #2DBDFF 100%);
+    padding: 3px;
+    /* 星星般的微弱发光 - 使用UI主色调 */
+    box-shadow: 
+        0 0 10px rgba(3, 250, 160, 0.3),
+        0 0 20px rgba(3, 250, 160, 0.2),
+        0 0 30px rgba(45, 189, 255, 0.1),
+        0 4px 15px rgba(3, 250, 160, 0.15);
+    transition: all 0.4s ease;
+    animation: subtle-glow-4f9ceb7d 3s ease-in-out infinite;
+}
+
+/* 微弱的呼吸发光动画 */
+@keyframes subtle-glow-4f9ceb7d {
+0%, 100% {
+        box-shadow: 
+            0 0 10px rgba(3, 250, 160, 0.3),
+            0 0 20px rgba(3, 250, 160, 0.2),
+            0 0 30px rgba(45, 189, 255, 0.1),
+            0 4px 15px rgba(3, 250, 160, 0.15);
+}
+50% {
+        box-shadow: 
+            0 0 15px rgba(3, 250, 160, 0.4),
+            0 0 25px rgba(3, 250, 160, 0.25),
+            0 0 35px rgba(45, 189, 255, 0.15),
+            0 4px 20px rgba(3, 250, 160, 0.2);
+}
+}
+.part:hover .app-logo-icon[data-v-4f9ceb7d] {
+    transform: scale(1.05) rotate(5deg);
+    /* Hover时增强星光效果 */
+    box-shadow: 
+        0 0 20px rgba(3, 250, 160, 0.5),
+        0 0 30px rgba(3, 250, 160, 0.3),
+        0 0 40px rgba(45, 189, 255, 0.2),
+        0 6px 25px rgba(3, 250, 160, 0.25);
+}
+.club-info[data-v-4f9ceb7d] {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.member-count[data-v-4f9ceb7d] {
+    font-size: 12px;
+    color: #28a745;
+    font-weight: 500;
+}
+.domain[data-v-4f9ceb7d] {
+    font-size: 11px;
+    color: #6c757d;
+    font-family: 'Courier New', monospace;
+}
+.card:hover .club-info[data-v-4f9ceb7d] {
+    border-top-color: rgba(255, 255, 255, 0.3);
+}
+.card:hover .member-count[data-v-4f9ceb7d] {
+    color: #34ce57;
+}
+.loading-clubs[data-v-4f9ceb7d],
+.no-clubs[data-v-4f9ceb7d] {
+    text-align: center;
+    padding: 40px 20px;
+    color: #6c757d;
+}
+.loading-text[data-v-4f9ceb7d] {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.no-clubs-text[data-v-4f9ceb7d] {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #6c757d;
+}
+
+/* 增强卡片悬停效果 */
+.uc-home-3 .card[data-v-4f9ceb7d] {
+    transition: all 0.3s ease;
+}
+.uc-home-3 .card[data-v-4f9ceb7d]:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+.uc-home-3 .card:hover .face img[data-v-4f9ceb7d] {
+    transform: scale(1.1);
+}
+.face img[data-v-4f9ceb7d] {
+    transition: transform 0.3s ease;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+.club-info[data-v-4f9ceb7d] {
+        margin-top: 8px;
+        padding-top: 8px;
+}
+.member-count[data-v-4f9ceb7d] {
+        font-size: 11px;
+}
+.domain[data-v-4f9ceb7d] {
+        font-size: 10px;
+}
+}
+
+/* 手机端防止横向滚动 - 只修复超大背景元素 */
+@media (max-width: 767px) {
+.uc-home-1 .bg[data-v-4f9ceb7d],
+    .uc-home-2 .bg[data-v-4f9ceb7d] {
+        width: 100vw !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+}
+}
+

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkWeb3_club=self.webpackChunkWeb3_club||[]).push([[3456],{93456:function(n,e,u){u.d(e,{createPublicClient:function(){return t.l},defineChain:function(){return i.x},http:function(){return c.L}});var t=u(83150),c=u(12406),i=u(54676)}}]);

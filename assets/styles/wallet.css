@@ -1,0 +1,263 @@
+/* 钱包连接样式 */
+
+/* 钱包地址显示 */
+.wallet-address {
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  height: 40px;
+  background: #03FAA0;
+  color: #000;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.wallet-address::after {
+  content: "▼";
+  font-size: 10px;
+  margin-left: 8px;
+  transition: transform 0.3s;
+}
+
+.wallet-address:hover {
+  background: #00e890;
+  box-shadow: 0 2px 8px rgba(3, 250, 160, 0.3);
+}
+
+.wallet-address.mobile {
+  height: 36px;
+  padding: 0 12px;
+  font-size: 13px;
+}
+
+.wallet-address.mobile::after {
+  font-size: 8px;
+  margin-left: 5px;
+}
+
+.wallet-info-mobile {
+  position: relative;
+}
+
+.wallet-dropdown-mobile {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 180px;
+  background: rgba(8, 12, 20, 0.98);
+  border: 1px solid rgba(3, 250, 160, 0.6);
+  border-radius: 10px;
+  box-shadow: 0 0 18px rgba(3, 250, 160, 0.25);
+  margin-top: 8px;
+  padding: 10px;
+  z-index: 100;
+  animation: fadeIn 0.2s ease-in-out;
+}
+
+/* 仅 Disconnect 的弹出层，按设计尺寸与颜色 */
+.disconnect-popover {
+  width: 140px !important;
+  /* height: 176px; */
+  background: #020202 !important;
+  border: 0.5px solid #35715B !important;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.disconnect-btn.only {
+  width: 100%;
+  height: 40px;
+  background: transparent;
+  color: #00FF95;
+  border: 1px solid #35715B;
+  border-radius: 6px;
+}
+
+.disconnect-btn.only:hover {
+  background: rgba(0, 255, 149, 0.06);
+}
+
+.wallet-info {
+  position: relative;
+}
+
+.wallet-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 180px;
+  background: rgba(8, 12, 20, 0.98);
+  border: 1px solid rgba(3, 250, 160, 0.6);
+  border-radius: 10px;
+  box-shadow: 0 0 18px rgba(3, 250, 160, 0.25);
+  margin-top: 8px;
+  z-index: 100;
+  padding: 10px;
+  transition: all 0.3s ease;
+  animation: fadeIn 0.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.disconnect-btn {
+  width: 100%;
+  padding: 8px 0;
+  background-color: rgba(3, 250, 160, 0.12);
+  color: #03FAA0;
+  border: 1px solid rgba(3, 250, 160, 0.6);
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.disconnect-btn:hover {
+  background-color: rgba(3, 250, 160, 0.2);
+  box-shadow: 0 0 12px rgba(3, 250, 160, 0.35);
+}
+
+.dropdown-item {
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: all 0.2s;
+  color: #fff;
+  font-weight: 500;
+}
+
+.divider {
+  height: 0;
+  border-top: 1px solid rgba(53, 113, 91, 0.7); /* #35715B */
+  margin: 8px 10px;
+}
+
+.dropdown-item:hover {
+  background: rgba(3, 250, 160, 0.08);
+  color: #03FAA0;
+}
+
+/* 钱包选择弹窗 */
+.wallet-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+  position: relative;
+  width: 350px;
+  max-width: 90%;
+  background: rgba(8, 12, 20, 0.98);
+  border-radius: 12px;
+  border: 1px solid rgba(3, 250, 160, 0.65);
+  box-shadow: 0 0 26px rgba(3, 250, 160, 0.25);
+  overflow: hidden;
+}
+
+/* 更接近设计图的大尺寸外框 */
+.uc-wallet-cyber {
+  width: 678px;
+  max-width: calc(100% - 40px);
+  border-width: 3px;
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  border-bottom: 1px solid rgba(3, 250, 160, 0.25);
+}
+
+.modal-header h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #03FAA0;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: rgba(255,255,255,0.6);
+  line-height: 1;
+}
+
+.modal-body {
+  padding: 20px;
+}
+
+.wallet-option {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 14px 15px;
+  margin-bottom: 12px;
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 8px;
+  background: rgba(255,255,255,0.02);
+  cursor: pointer;
+  transition: all 0.2s;
+  color: #fff;
+}
+
+.wallet-option:last-child {
+  margin-bottom: 0;
+}
+
+.wallet-option:hover {
+  background: rgba(3, 250, 160, 0.08);
+  border-color: #03FAA0;
+  color: #03FAA0;
+}
+
+.wallet-option img {
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+}
+
+.wallet-option span {
+  font-weight: 600;
+  color: #fff;
+}
+
+/* 三种连接方式的图标容器统一高度与对齐，贴合站点按钮风格 */
+.wallet-option {
+  display: flex;
+  align-items: center;
+  min-height: 50px;
+}

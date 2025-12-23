@@ -1,0 +1,50 @@
+<svg width="96" height="96" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .jh-blue { fill: #2563FF; }
+      .jh-stroke { stroke: #2563FF; }
+    </style>
+  </defs>
+
+  <!-- 方形白色背景 -->
+  <rect x="8" y="8" width="80" height="80" rx="12" fill="#FFFFFF"/>
+
+  <!-- 图标整体 -->
+  <g transform="translate(20,22)">
+
+    <!-- 中心聊天气泡（Hub） -->
+    <path
+      d="M14 8h36c6 0 11 4.5 11 10v17c0 5.5-5 10-11 10H32l-7 7-7-7H14c-6 0-11-4.5-11-10V18C3 12.5 8 8 14 8z"
+      fill="#FFFFFF"
+      class="jh-stroke"
+      stroke-width="2.2"
+      stroke-linejoin="round"
+    />
+
+    <!-- 帖子三行 -->
+    <rect x="19" y="14" width="26" height="3.3" rx="1.6" class="jh-blue" opacity="0.9"/>
+    <rect x="19" y="20.5" width="21" height="3.3" rx="1.6" class="jh-blue" opacity="0.75"/>
+    <rect x="19" y="27" width="16" height="3.3" rx="1.6" class="jh-blue" opacity="0.6"/>
+
+    <!-- 连接线：群组节点网络 -->
+    <line x1="34" y1="11" x2="44" y2="0" class="jh-stroke" stroke-width="2" stroke-linecap="round"/>
+    <line x1="41" y1="26" x2="55" y2="26" class="jh-stroke" stroke-width="2" stroke-linecap="round"/>
+    <line x1="33" y1="35" x2="47" y2="47" class="jh-stroke" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- 上方群组节点 -->
+    <circle cx="46" cy="-1.5" r="5.3" class="jh-blue"/>
+    <circle cx="44.3" cy="-2.5" r="1.2" fill="#FFFFFF" opacity="0.9"/>
+    <circle cx="47.3" cy="-2.5" r="1.2" fill="#FFFFFF" opacity="0.75"/>
+
+    <!-- 右侧群组节点 -->
+    <circle cx="59" cy="26" r="6" class="jh-blue"/>
+    <rect x="55.5" y="24.3" width="7" height="2.7" rx="1.3" fill="#FFFFFF" opacity="0.9"/>
+
+    <!-- 右下群组节点 -->
+    <circle cx="49" cy="49" r="5.3" class="jh-blue"/>
+    <circle cx="49" cy="49" r="3" fill="#FFFFFF" opacity="0.9"/>
+
+    <!-- 背景淡网络圈 -->
+    <circle cx="30" cy="26" r="30" fill="#2563FF" opacity="0.05"/>
+  </g>
+</svg>

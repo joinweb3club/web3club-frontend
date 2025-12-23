@@ -1,0 +1,559 @@
+
+/* 优化弹窗背景 - 纯黑色 */
+.uc-alert[data-v-17188234] {
+  background-color: rgba(0, 0, 0, 0.95) !important;
+}
+
+/* 修复 box 容器背景 - 这是内容区域的背景 */
+.box[data-v-17188234] {
+  background-color: #000000 !important;
+}
+
+/* 主内容区域 */
+.main[data-v-17188234] {
+  padding: 0 2rem 2rem 2rem;
+}
+
+/* Banner 区域样式 - 仿 X/Twitter */
+.banner-section[data-v-17188234] {
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 12px 12px 0 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* 头像和信息区域 */
+.profile-section[data-v-17188234] {
+  position: relative;
+  padding: 0 2rem;
+  margin-top: -40px; /* 让头像稍微覆盖 Banner */
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: flex-end;
+  gap: 1rem;
+  min-height: 80px;
+}
+.club-avatar[data-v-17188234] {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid #000; /* 黑色边框，与背景融合 */
+  flex-shrink: 0;
+  background: #000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+.club-avatar img[data-v-17188234] {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.club-info[data-v-17188234] {
+  flex: 1;
+  padding-bottom: 0.5rem;
+}
+.club-name[data-v-17188234] {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  margin: 0 0 0.25rem 0;
+  line-height: 1.3;
+}
+.club-domain[data-v-17188234] {
+  font-size: 0.875rem;
+  color: #999;
+  font-family: 'Courier New', monospace;
+  margin: 0;
+}
+
+/* ========== 新的布局样式 ========== */
+
+/* Club Info Section */
+.club-info-section[data-v-17188234] {
+  margin-bottom: 1.5rem;
+}
+.info-label[data-v-17188234] {
+  font-size: 1rem;
+  color: #03FAA0;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+.info-desc[data-v-17188234] {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.6;
+}
+
+/* Club Stats Grid */
+.club-stats-grid[data-v-17188234] {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.stat-item[data-v-17188234] {
+  background: rgba(3, 250, 160, 0.05);
+  border: 1px solid rgba(3, 250, 160, 0.3);
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+}
+.stat-label[data-v-17188234] {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 0.5rem;
+}
+.stat-value[data-v-17188234] {
+  font-size: 1rem;
+  color: #03FAA0;
+  font-weight: bold;
+  word-break: break-word;
+}
+.stat-value.admin-address[data-v-17188234] {
+  font-size: 0.85rem;
+  font-family: monospace;
+}
+
+/* Membership Section */
+.membership-section[data-v-17188234] {
+  margin: 2rem 0;
+}
+.section-title[data-v-17188234] {
+  font-size: 1.25rem;
+  color: #03FAA0;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+.membership-cards[data-v-17188234] {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+.membership-card[data-v-17188234] {
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(3, 250, 160, 0.3);
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+}
+.membership-card[data-v-17188234]:hover {
+  border-color: #03FAA0;
+  box-shadow: 0 0 20px rgba(3, 250, 160, 0.2);
+}
+.card-header[data-v-17188234] {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.card-header h3[data-v-17188234] {
+  font-size: 1.25rem;
+  color: #fff;
+  margin: 0;
+}
+.card-badge[data-v-17188234] {
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+.card-badge.permanent[data-v-17188234] {
+  background: rgba(3, 250, 160, 0.2);
+  color: #03FAA0;
+}
+.card-badge.temporary[data-v-17188234] {
+  background: rgba(45, 189, 255, 0.2);
+  color: #2DBDFF;
+}
+.card-price[data-v-17188234] {
+  font-size: 1.75rem;
+  color: #03FAA0;
+  font-weight: bold;
+  text-align: center;
+  margin: 1.5rem 0;
+  min-height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card-price-list[data-v-17188234] {
+  margin: 1rem 0;
+  min-height: 5rem;
+}
+.price-item[data-v-17188234] {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.price-item[data-v-17188234]:last-child {
+  border-bottom: none;
+}
+.price-item .duration[data-v-17188234] {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+.price-item .price[data-v-17188234] {
+  font-size: 1rem;
+  color: #03FAA0;
+  font-weight: bold;
+}
+.price-item .price.free-price[data-v-17188234] {
+  color: #FFB94F;
+  font-size: 0.9rem;
+}
+.free-tag[data-v-17188234] {
+  color: #FFB94F;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.75rem;
+  margin: 1.5rem 0;
+  min-height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card-button[data-v-17188234] {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.card-button.primary[data-v-17188234] {
+  background: #03FAA0;
+  color: #000;
+}
+.card-button.primary[data-v-17188234]:hover {
+  background: #02d989;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(3, 250, 160, 0.3);
+}
+.card-button.secondary[data-v-17188234] {
+  background: transparent;
+  border: 1px solid #03FAA0;
+  color: #03FAA0;
+  font-size: 0.875rem;
+  padding: 0.5rem;
+}
+.card-button.secondary[data-v-17188234]:hover {
+  background: rgba(3, 250, 160, 0.1);
+}
+.card-buttons[data-v-17188234] {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+/* Token requirements 样式优化 */
+.other[data-v-17188234] {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(3, 250, 160, 0.2);
+  border-radius: 8px;
+}
+.other h3[data-v-17188234] {
+  color: #03FAA0;
+  margin-bottom: 1rem;
+}
+.other .tips[data-v-17188234] {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 1rem;
+}
+.other .list .txt2[data-v-17188234] {
+  word-break: break-all;
+  font-size: 0.75rem;
+}
+
+/* 链名称徽章样式 */
+.chain-badge[data-v-17188234] {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background: rgba(243, 156, 18, 0.2);
+  color: #f39c12;
+  border: 1px solid rgba(243, 156, 18, 0.5);
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-left: 0.5rem;
+}
+
+/* 代币数量样式 */
+.token-amount[data-v-17188234] {
+  color: #03FAA0;
+  font-weight: 700;
+  font-size: 1.1em;
+  font-family: 'Courier New', monospace;
+}
+
+/* 代币符号样式 */
+.token-symbol[data-v-17188234] {
+  color: #03FAA0;
+  font-weight: 600;
+  font-family: 'Courier New', monospace;
+  margin-left: 0.25rem;
+}
+
+/* Token requirements 内容优化 */
+.other .list li[data-v-17188234] {
+  margin-bottom: 1rem;
+}
+.other .list .con .txt[data-v-17188234] {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+/* Token requirement 文本布局 */
+.token-requirement-text[data-v-17188234] {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+.token-requirement-text > span[data-v-17188234]:first-child {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Operate buttons */
+.operate[data-v-17188234] {
+  margin-top: 2rem;
+  text-align: center;
+  padding: 0 1rem;
+}
+.eligibility-check-btn[data-v-17188234] {
+  width: 100%;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  background: #03FAA0;
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: normal;
+  line-height: 1.4;
+  min-height: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.eligibility-check-btn[data-v-17188234]:hover {
+  background: #02d989;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(3, 250, 160, 0.3);
+}
+.operate .uc-btn[data-v-17188234] {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+}
+
+/* 移动端优化 */
+@media (max-width: 768px) {
+.main[data-v-17188234] {
+    padding: 0 1.5rem 1.5rem 1.5rem;
+}
+.banner-section[data-v-17188234] {
+    height: 160px;
+}
+.profile-section[data-v-17188234] {
+    padding: 0 1.5rem;
+    margin-top: -35px;
+    gap: 0.875rem;
+    min-height: 70px;
+}
+.club-avatar[data-v-17188234] {
+    width: 100px;
+    height: 100px;
+    border-width: 3px;
+}
+.club-name[data-v-17188234] {
+    font-size: 1.25rem;
+}
+.club-domain[data-v-17188234] {
+    font-size: 0.813rem;
+}
+.club-stats-grid[data-v-17188234] {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+}
+.membership-cards[data-v-17188234] {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+.card-price[data-v-17188234] {
+    font-size: 1.5rem;
+    min-height: 2.5rem;
+}
+.card-price-list[data-v-17188234] {
+    min-height: 4rem;
+}
+.eligibility-check-btn[data-v-17188234] {
+    font-size: 0.9rem;
+    padding: 0.875rem 1.5rem;
+    min-height: 3rem;
+}
+}
+@media (max-width: 576px) {
+.main[data-v-17188234] {
+    padding: 0 1rem 1rem 1rem;
+}
+.banner-section[data-v-17188234] {
+    height: 140px;
+}
+.profile-section[data-v-17188234] {
+    padding: 0 1rem;
+    margin-top: -30px;
+    gap: 0.75rem;
+    min-height: 60px;
+}
+.club-avatar[data-v-17188234] {
+    width: 80px;
+    height: 80px;
+    border-width: 3px;
+}
+.club-name[data-v-17188234] {
+    font-size: 1.125rem;
+}
+.club-domain[data-v-17188234] {
+    font-size: 0.75rem;
+}
+.stat-value[data-v-17188234] {
+    font-size: 0.875rem;
+}
+.card-header h3[data-v-17188234] {
+    font-size: 1.1rem;
+}
+.card-badge[data-v-17188234] {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.5rem;
+}
+.card-buttons[data-v-17188234] {
+    grid-template-columns: 1fr;
+}
+.eligibility-check-btn[data-v-17188234] {
+    font-size: 0.8rem;
+    padding: 0.75rem 1rem;
+    min-height: 2.5rem;
+}
+}
+
+
+/* 分页组件样式 */
+.pagination-wrapper[data-v-07eb131e] {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.pagination[data-v-07eb131e] {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.page-btn[data-v-07eb131e] {
+    min-width: 2.5rem;
+    height: 2.5rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid rgba(3, 250, 160, 0.5);
+    background-color: transparent;
+    color: #03FAA0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+}
+.page-btn[data-v-07eb131e]:hover:not(:disabled):not(.ellipsis) {
+    background-color: rgba(3, 250, 160, 0.1);
+    border-color: #03FAA0;
+}
+.page-btn.active[data-v-07eb131e] {
+    background-color: #03FAA0;
+    color: #000;
+    border-color: #03FAA0;
+}
+.page-btn[data-v-07eb131e]:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+.page-btn.ellipsis[data-v-07eb131e] {
+    border: none;
+    cursor: default;
+}
+.page-btn.ellipsis[data-v-07eb131e]:hover {
+    background-color: transparent;
+}
+.pagination-info[data-v-07eb131e] {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.875rem;
+    text-align: center;
+}
+
+/* 响应式设计 */
+@media (max-width: 576px) {
+.page-btn[data-v-07eb131e] {
+        min-width: 2rem;
+        height: 2rem;
+        padding: 0.25rem 0.5rem;
+        font-size: 0.75rem;
+}
+.pagination[data-v-07eb131e] {
+        gap: 0.25rem;
+}
+}
+
+/* 进度条样式 */
+.loading-progress[data-v-07eb131e] {
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-bottom: 1rem;
+}
+.loading-state[data-v-07eb131e] {
+    text-align: center;
+    padding: 2rem;
+}
+.progress-bar[data-v-07eb131e] {
+    width: 100%;
+    max-width: 400px;
+    height: 8px;
+    background-color: rgba(3, 250, 160, 0.1);
+    border-radius: 4px;
+    margin: 1rem auto;
+    overflow: hidden;
+}
+.progress-fill[data-v-07eb131e] {
+    height: 100%;
+    background: linear-gradient(90deg, #03FAA0, #00d084);
+    transition: width 0.3s ease;
+    border-radius: 4px;
+}
+
+/* 加载时俱乐部卡片渐入效果 */
+.list .card[data-v-07eb131e] {
+    animation: fadeInUp-07eb131e 0.5s ease;
+}
+@keyframes fadeInUp-07eb131e {
+from {
+        opacity: 0;
+        transform: translateY(20px);
+}
+to {
+        opacity: 1;
+        transform: translateY(0);
+}
+}
+

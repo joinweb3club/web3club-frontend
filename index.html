@@ -1,0 +1,35 @@
+<!doctype html><html lang=""><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><link rel="icon" href="/favicon.ico"><title>Web3.club - Own Your Social Future</title><script>(function() {
+
+        function setupWalletPriority() {
+          if (!window.ethereum) return false;
+          
+          if (window.ethereum.providers && Array.isArray(window.ethereum.providers)) {
+            const metamask = window.ethereum.providers.find(p => p.isMetaMask && !p.isOneKey);
+            if (metamask && window.ethereum !== metamask) {
+              console.log('🦊');
+              window.ethereum = metamask;
+              return true;
+            }
+          }
+          
+          return false;
+        }
+        
+
+        setupWalletPriority();
+        
+
+        let checkCount = 0;
+        const intervalId = setInterval(function() {
+          checkCount++;
+          
+          if (setupWalletPriority()) {
+
+          }
+          
+          if (checkCount >= 30) { 
+            clearInterval(intervalId);
+            console.log('✅');
+          }
+        }, 100);
+      })();</script><script defer="defer" src="/js/chunk-vendors.8f9d2bbd.js"></script><script defer="defer" src="/js/app.c4f0def3.js"></script><link href="/css/chunk-vendors.be7abf4f.css" rel="stylesheet"><link href="/css/app.e8df43de.css" rel="stylesheet"></head><body><noscript><strong>We're sorry but Web3.club - Own Your Social Future doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="app"></div></body></html>
